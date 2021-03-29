@@ -214,3 +214,17 @@ input.error {
   font-size: 0.85rem;
   margin-top: 0.5rem;
 }
+#footer {
+    text-emphasis-color: #cfe4f0;
+    bottom: 0;
+    background-color: #031824;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    color: #bd2f2f;
+ }
+
+ #footer p {
+    padding-top: 10px;
+ }
