@@ -1,3 +1,7 @@
+# Shades And Tints Website Link
+
+open [shades-and-tints.netlify.app](https://shades-and-tints.netlify.app)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
