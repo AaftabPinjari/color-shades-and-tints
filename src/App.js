@@ -7,23 +7,41 @@ function App() {
 
   const [color,setColor]=useState('');
   const [error,setError]= useState(false);
-  const [list,setList]=useState([]);
+  const [list,setList]=useState(new Values('#0E79B2').all(10));
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    try {
+      let colors= new Values(color).all(10);
+      setList(colors);
+      
+    } catch (error) {
+      setError(true);
+      
+    }
+    
   }
   return( 
   <>
     <section className="container">
       <h3>color generator</h3>
       <form onSubmit={handleSubmit}>
-        <input type="text" value={color} onChange={(e)=> setColor(e.target.value) } placeholder="#f15025" />
-        <button className="btn" type="submit">generate</button>
+        <input type="text" value={color} 
+        onChange={(e)=> setColor(e.target.value) } 
+        placeholder="#0E79B2" 
+        className={`${error ? 'error' : null }`}
+        />
+        <button className="btn" type="submit" onSubmit={handleSubmit}>generate</button>
       </form>
     
     </section>
     <section className="colors">
-      <h4>list Item</h4>
+      {list.map((color,index)=>{
+        return <SingleColor key={index} 
+        {...color} 
+        index={index} 
+        hexColor={color.hex} />
+      })}
     </section>
   </>
   )
