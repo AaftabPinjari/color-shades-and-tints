@@ -1,4 +1,4 @@
-# Site Link [shades-and-tints.netlify.app](https://shades-and-tints.netlify.app)
+# Site Link [Shades and Tints](https://shades-and-tints.netlify.app)
 
 # Getting Started with Create React App
 
