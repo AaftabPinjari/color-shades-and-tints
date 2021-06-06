@@ -1,6 +1,4 @@
-# Shades And Tints Website Link
-
-open [shades-and-tints.netlify.app](https://shades-and-tints.netlify.app)
+# Site Link [shades-and-tints.netlify.app](https://shades-and-tints.netlify.app)
 
 # Getting Started with Create React App
 
